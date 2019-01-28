@@ -1,0 +1,36 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.btn {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	display: inline-block;
+	box-sizing: border-box;
+	color: white;
+	text-decoration: none;
+	text-align:center;
+  	z-index: 1;
+  	border: none;
+  	width: 192px; /*auto*/
+	height: 42px; /*выравнвание по вертикали*/
+	line-height: 42px;
+	border-radius: 3px;
+	background-color: #e2244b;
+	&--order {
+		text-transform: uppercase;
+	}
+	&--catalog {
+		min-width: 220px;
+		max-width: 250px;/*270*/
+	}
+	&--search {
+		width: 100px;
+		border-radius: 0px;
+		height: 40px; /*выравнвание по вертикали*/
+		line-height: 40px;
+	}
+  }
+  
+
+.btn:hover {
+	background-color: darken(#e2244b, 10%);
+}

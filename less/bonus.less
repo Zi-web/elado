@@ -1,0 +1,49 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.bonus {
+	display: flex;
+	flex-direction: column;
+	width: 290px;
+	height: 210px;
+	background-color: #f6e3e7;
+	margin-left: auto;
+	margin-top: 9px;
+}
+.bonus__items {
+	margin: auto;
+}
+
+.bonus__item {
+	display: flex;
+	align-items: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	img {
+		margin-right: 10px;
+	}
+}
+
+.bonus__title {
+	color: #242424;
+	font-family: "Open Sans";
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+@media (min-width: 750px) and (max-width: 1169px) {
+	.bonus {
+		 margin-top: 0;
+		 margin-left: 0;
+	}
+}
+
+@media (min-width: 319px) and (max-width: 749px) {
+	.bonus {
+		width: 250px;
+		height: 170px;
+		margin-left: 0;
+		margin-top: 0;
+	}
+}

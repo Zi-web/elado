@@ -1,0 +1,42 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.menu-catalog a {
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.menu-catalog__btn {
+	display: inline-block;
+	margin-right: auto;
+	position: relative;
+	cursor: pointer;
+}
+
+
+.menu-catalog__btn::before {
+	display: inline-block;
+	margin-right: 20px;
+	content: "";
+	position: absolute;
+	top: 30%;
+	left: 20px;
+	width: 17px;
+	height: 2px;
+	background-color: #ffffff;
+	box-shadow: 0 6px 0 0 #ffffff,
+				0 12px 0 0 #ffffff;
+}
+
+.menu-catalog__btn::after {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f078'; 
+	font-weight: 600;
+	display: inline-block;
+	line-height: 16px; 
+	position: absolute;
+	right: 30px;
+	top: 33%;
+}

@@ -1,0 +1,23 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.banquette {
+	width: 383px;
+	height: 184px;
+	background-image: url('../img/kreslo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.banquette::before {
+	content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('../img/overlay.png');
+	opacity: 0.8;
+}

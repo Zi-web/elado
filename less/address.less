@@ -1,0 +1,37 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.address {
+	display: flex;
+	color: #95989a;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.address__icon {
+	text-align: right;
+}
+
+.address__icon:before {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f3c5'; 
+	font-weight: 600;
+	display: inline-block;
+	margin-right: 10px; 
+	line-height: 18px; 
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1170px) {
+	.address {
+		display: none;
+	}
+}
+
+@media (min-width: 319px) and (max-width: 767px) {
+	.address {
+		display: none;
+	}
+}

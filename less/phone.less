@@ -1,0 +1,61 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.phone {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 190px;
+	height: 50px;
+	position: relative;
+}
+
+.phone__code {
+	display: inline-block;
+	color: #95989a;
+	font-family: "Open Sans";
+	font-size: 46px;
+	font-weight: 300;
+}
+
+.phone__number {
+	display: inline-block;
+	color: #333333;
+	font-family: "Open Sans";
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+.phone__code::before {
+	content: url('../img/velcom.svg'); 
+	display: block;
+	width: 16px;
+	height: 13px; 
+	position: absolute;
+	top: -20px;
+	left: -20px;
+}
+
+.phone__code::after {
+	content: url('../img/mts.svg'); 
+	display: block;
+	width: 16px;
+	height: 13px; 
+	position: absolute;
+	bottom: 35px;
+	left: -17px;
+}
+
+.phone::after {
+	content: url('../img/viber.svg'); 
+	display: block;
+	width: 14px;
+	height: 17px; 
+	position: absolute;
+	top: 8px;
+	right: -20px;
+}
