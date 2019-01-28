@@ -1,3 +1,0 @@
-# elado
-# elado
-# elado
